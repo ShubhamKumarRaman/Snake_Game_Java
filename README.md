@@ -29,6 +29,8 @@ This project is a simple Snake Game implemented in Java using Swing and AWT. The
 ## 📜 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it with attribution.
 
+[MIT License](LICENSE)
+
 Enjoy the game! 🎯
 
 
