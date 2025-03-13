@@ -11,6 +11,9 @@ public class Board extends JPanel {
     private Image dot;
     private Image head;
 
+    private final int x[] = new int[];
+    private final int y[] = new int[];
+
     private int dots;
 
     public Board() {
