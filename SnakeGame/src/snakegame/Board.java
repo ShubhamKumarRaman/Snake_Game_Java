@@ -21,7 +21,7 @@ public class Board extends JPanel implements ActionListener {
     private final int ALL_DOTS = 250000;
     private final int DOT_SIZE = 10;
 
-    private final int RANDOM_POSITION = 49;
+    private final int RANDOM_POSITION = 29;
     private int apple_x;
     private int apple_y;
 
@@ -119,7 +119,17 @@ public class Board extends JPanel implements ActionListener {
 //        y[0] += DOT_SIZE;
     }
 
+    public void checkApple() {
+        if ((x[0] == apple_x) && (y[0] == apple_y)) {
+            dots++;
+            locateApple();
+        }
+    }
+
     public void actionPerformed(ActionEvent ae) {
+
+        checkApple();
+
         move();
 
         repaint();
