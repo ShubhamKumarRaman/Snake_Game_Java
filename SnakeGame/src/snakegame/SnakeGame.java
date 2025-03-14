@@ -11,13 +11,14 @@ public class SnakeGame extends JFrame {
 
 //        setLocation(100,100);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(500, 500);
+//        setSize(500, 500);
 
         setLocationRelativeTo(null);
-        setVisible(true);
+        setResizable(false);
+
     }
 
     public static void main(String[] args) {
-        new SnakeGame();
+        new SnakeGame().setVisible(true);
     }
 }
